@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="og:title" content="Video Player" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/ios-glyphs/60/4a90e2/cloud.png">
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+</head>
+
+<body>
+    <header>
+        <div class="m-4">
+            <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <h1>
+                            <i class="bi bi-play-fill" style="color: rgb(192, 127, 41);"></i>
+                            Video Player
+                        </h1>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="darkSwitch" />
+                            <label class="custom-control-label" for="darkSwitch" id="dark-icon"><i
+                                    class="bi bi-brightness-high"></i></label>
+                        </div>
+                    </a>
+                    <div class="nav-link">
+                        <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a class="flex-sm-fill text-sm-center nav-link" href="/">Home</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="/downloads/">Files</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="/search">Search</a>
+                            <a class="flex-sm-fill text-sm-center nav-link active" href="/stream">Player</a>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div id="player-div" class="player-div"></div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script src="/static/js/addons.js"></script>
+    <script src="/static/js/player.js"></script>
+    <script src="/static/js/dark.js"></script>
+</body>
+
+</html>
